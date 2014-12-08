@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html>
+
+<!--Head section-->
+<head>
+
+	<meta charset="UTF-8">
+	
+	<title>Login</title>
+	
+	<!--Stylesheet-->
+	<link rel="stylesheet" type="text/css" href="login.css">
+	<link rel="shortcut icon" href="images/brand.png">
+
+	
+</head>
+
+<!--Body section-->
+<body>
+	
+	<!-- Form section -->
+	<section id="mystyles" class="myform">
+
+		<form id="form">
+			
+			<h1>Login</h1>
+			
+			<p>Please enter login details:</p>
+			<label>Name &nbsp;
+			<span class="small">Add your name here.</span>
+			</label>
+			<input type="text" name="name" id="name">
+			
+			<label>Password &nbsp;
+			<span class="small">minimum 8 chars.</span>
+			</label>
+			<input type="password" name="password" id="password">	
+			<br>	
+			<button type="submit" onclick="validate(this.form)">LOGIN</button>
+				
+		</form>
+		
+	</section>
+	
+	<!-- Javascript -->
+	<script type="text/javascript">
+	
+		function validate(form)
+		{
+			if(form.name.value == "student" && form.password.value == "password")
+			{				
+				window.open('database.html')	
+			}
+			else
+			{
+				alert("Incorrect Username or Password - Hint: student/password")				
+			}
+			
+		}
+		
+	</script>
+	
+</body>
+
+</html>

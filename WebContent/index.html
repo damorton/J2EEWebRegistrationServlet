@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<!--Head Section-->
+<head>
+
+<meta charset="UTF-8">
+
+<title>Home</title>
+
+<!--Style sheet-->
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<link rel="shortcut icon" href="images/brand.png">
+
+<!--Javascript-->
+<!--<script src="javascript.js">
+	<!--<script type="text/javascript">
+	
+	</script>-->
+
+
+
+<script>
+
+	function StartMove() {
+		var bannerImage = new Image(); <!-- Create a new image variable-->
+		bannerImage.src="images/scroll.png"; <!-- Link to the banner image -->
+		window.cssMaxWidth = bannerImage.width; <!-- Sets the window in which the banner image is display to the same width as the image -->
+		window.cssXPos=0; <!-- Position the image in the top left corner of the window -->
+		setInterval("MoveBackGround()",20); <!-- Sets the speed at which the banner scrolls by calling the moveBackGroundFunction, lower the number ,20 the faster the baneer scrolls -->
+	}
+
+	function MoveBackGround () {
+		window.cssXPos=window.cssXPos+1; <!-- Imcrements the image postion by one which moves it to the right -->
+		if (window.cssXPos>=window.cssMaxWidth) { <!-- When the window gets to the end of the image it resets the position back to 0 resetting the image-->
+		window.cssXPos=0;
+	}
+		
+	toMove=document.getElementById("scroller"); <!-- Place the image in the division with id scroller
+	toMove.style.backgroundPosition=window.cssXPos+"px 0px"; <!-- Sets the image to move along the x axis and not the Y -->
+
+	}
+	</script>
+
+
+</head>
+
+<!--Body section-->
+<body onload="StartMove()">
+	<!-- the start move function is loaded with the body -->
+
+	<!--Header section-->
+	<header>
+		<img src="images/ict_header_img.jpg" width="100%" height="100%"
+			alt="brandimage">
+	</header>
+
+	<!--Navigation-->
+	<nav class="nav">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="programme.html">Programme</a></li>
+			<li><a href="register.html">Register</a></li>
+			<li><a href="presenter_registration.html">Call for
+					Presenters</a></li>
+			<li><a href="">Speakers</a></li>
+			<li><a href="">Accommodation</a></li>
+			<li><a href="">Location</a></li>
+			<li><a href="login.html">Login</a></li>
+		</ul>
+	</nav>
+
+	<!--Wrapper Section-->
+	<section class="wrapper">
+
+		<!--Main Content-->
+		<section class="content">
+
+			<div id="scroller"></div>
+
+			<h2>Global Voices</h2>
+
+			<br>
+			<p>Global Voices in Education showcases case studies, workshops
+				and keynote addresses to amplify effective methods teachers,
+				lecturers and practitioners have used to enhance the resonance and
+				reach of their own best practice and to energise student voices in
+				creative classrooms and online activities.</p>
+			<br>
+			<p>This day-long event celebrates the tenth anniversary of the
+				ICT in Education conference series, an annual showcase of education
+				leaders, opinion makers, and contributors to the #edchatie online
+				discussions. Its highly regarded framework provides a place where
+				enthusiastic educators can meet in person, sustaining relationships
+				that span across three levels of education.</p>
+			<br>
+
+		</section>
+
+		<!--Footer section-->
+		<footer> Created by David Morton </footer>
+
+	</section>
+</body>
+</html>

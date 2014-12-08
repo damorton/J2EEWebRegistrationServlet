@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<!--Head Section-->
+<head>
+
+<meta charset="UTF-8">
+
+<title>Register</title>
+
+<!--Style sheet-->
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<link rel="shortcut icon" href="images/brand.png">
+
+<!--Javascript-->
+<script src="javascript.js"></script>
+
+<style>
+.myBody {
+	font-size: 15px;
+	margin: 5px 10px;
+	line-height: 150%;
+	text-align:left;
+}
+
+table, td, th{
+	border:0px solid black;
+}
+
+#login_link{
+	text-align:right;
+}
+</style>
+
+</head>
+
+<!--Body section-->
+<body>
+
+	<!--Header section-->
+	<header>
+		<img src="images/ict_header_img.jpg" width="100%" height="100%" alt="brandimage">		
+	</header>
+
+	<!--Navigation-->
+	<nav class="nav">
+		<ul>
+			<li><a href="index.html">Home</a></li>			
+			<li><a href="programme.html">Programme</a></li>
+			<li><a href="register.html">Register</a></li>
+			<li><a href="presenter_registration.html">Call for Presenters</a></li>			
+			<li><a href="">Speakers</a></li>
+			<li><a href="">Accommodation</a></li>
+			<li><a href="">Location</a></li>
+			<li><a href="login.html">Login</a></li>
+		</ul>
+	</nav>
+
+	<!--Wrapper Div-->
+	<section class="wrapper">
+
+
+		<!--Main Content-->
+		<section class="content" id="form">
+			<br>
+			<h2>ICTEDU  Conference Registration</h2>
+			<h3>Registration</h3>
+			<h4>Registration is now open.</h4>
+			
+			
+			
+			<section id="registerForm">
+				<form action="Register" method="GET">					
+					<p class="myBody" style="color: #ee3124;">* Fields are
+						compulsory</p>
+					<table>
+						<tbody>
+							<tr>
+								<td>
+									<p class="myBody">
+										Name:<span style="color: #ee3124;">*</span>
+									</p>
+								</td>
+								<td><input class="myBody" name="Name" size="53" type="text">
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<p class="myBody">
+										Phone:<span style="color: #ee3124;">*</span>
+									</p>
+								</td>
+								<td><input class="myBody" name="Phone" size="53"
+									type="text"></td>
+							</tr>
+							<tr>
+								<td>
+									<p class="myBody">
+										Email:<span style="color: #ee3124;">*</span>
+									</p>
+								</td>
+								<td><input class="myBody" name="Email" size="53"
+									type="text"></td>
+							</tr>														
+							<tr>
+								<td colspan="2" style="text-align: center;"><br>
+								<br>
+								<input type="submit" value="Register"/></td>
+							</tr>
+						</tbody>
+					</table>
+				</form>
+			</section>
+
+		</section>
+
+		<!--Footer section-->
+		<footer> Created by David Morton </footer>
+
+	</section>
+</body>
+</html>

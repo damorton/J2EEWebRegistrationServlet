@@ -1,0 +1,94 @@
+/* CSS Stylesheet for login page*/
+
+body
+{
+background-color:rgb(238, 238, 238);
+font-family:Century Gothic, sans-serif;
+font-size:12px
+}
+
+p, h1, form, button
+{
+margin:0;
+padding:0;
+border:0;
+}
+
+.myform
+{
+background-color:#ffffff;
+margin:0 auto;
+margin-top:150px;
+width:400px;
+padding:20px;
+}
+
+#mystyles
+{
+border:solid 2px rgb(243, 82, 82);
+background:#ffffff;
+}
+
+#mystyles h1
+{
+font-size:14px;
+font-weight:bold;
+margin-bottom:8px;
+}
+
+#mystyles p
+{
+font-size:11px;
+color:#000000;
+margin-bottom:20px;
+border-bottom:solid 1px rgb(243, 82, 82);
+padding-bottom:solid 1px rgb(243, 82, 82);
+}
+
+#mystyles label
+{
+display:block;
+font-weight:bold;
+text-align:right;
+width:160px;
+float:left;
+}
+
+#mystyles .small
+{
+color:#666666;
+display:block;
+font-size:10px;
+font-weight:normal;
+text-align:right;
+width:160px;
+}
+
+#mystyles input
+{
+display:block;
+font-size:12px;
+padding:4px 2px;
+border:solid 1px #aacfe4;
+width:160px;
+margin:2px 0 20px 10px;
+}
+
+#mystyles button
+{
+clear:both;
+margin-left:140px;
+width:125px;
+height:31px;
+text-align:center;
+line-height:31px;
+color:#FFFFFF;
+/*background-color:rgb(0, 159, 191);*/
+background-color:rgb(243, 82, 82);
+display:block;
+font-size:11px;
+font-weight:bold;
+}
+
+
+
