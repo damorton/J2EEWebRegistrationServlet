@@ -1,4 +1,4 @@
-#.gitignore for J2EE registration website
+#gitignore for J2EE registration website
 /build
 
 .settings
