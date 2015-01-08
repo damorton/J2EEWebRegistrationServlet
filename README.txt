@@ -1,10 +1,7 @@
 
 	Enterprise Application Development
 
-	ICT in Education Website project
-
-	David Morton K00179391
-
+	The ICT registration website utilises a Java/J2EE application that stores registrar details in a MySQL database.
 	
 	Database Configuration and Project launch
 	-----------------------------------------
